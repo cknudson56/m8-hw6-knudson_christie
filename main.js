@@ -6,3 +6,7 @@ var shakeBall = function() {
 
 var button = document.getElementsByTagName('button')[0];
 button.onclick = shakeBall;
+
+var yourFortune = document.querySelector("#fortune-wrapper > p > span");
+var fortuneTextPlaceholder = document.createTextNode('');
+yourFortune.appendChild(fortuneTextPlaceholder);
