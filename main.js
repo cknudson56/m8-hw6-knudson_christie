@@ -6,9 +6,11 @@ var shakeBall = function() {
 	var fortuneText = document.createTextNode(magicFortunes[0]);
 
 	yourFortune.appendChild(fortuneText);
-	
+
 	var buttonArea = document.getElementById('generator-button');
 	buttonArea.removeChild(button);
+
+	yourFortune.classList.add('fortune-show');
 };
 
 var button = document.getElementsByTagName('button')[0];
